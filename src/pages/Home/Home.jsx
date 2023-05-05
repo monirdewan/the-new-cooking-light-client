@@ -8,7 +8,7 @@ const Home = () => {
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/recipes')
+        fetch('https://the-new-cooking-light-server-monirdewan.vercel.app/recipes')
         .then(res => res.json())
         .then(data => setRecipes(data))
     }, []);
@@ -25,14 +25,14 @@ const Home = () => {
                     <p>Overall, a new cooking restaurant has the potential to become a beloved destination for food lovers and a valuable addition to the local culinary scene. With careful planning, attention to detail, and a passion for great food and hospitality, the restaurant can establish a loyal customer base and achieve long-term success.</p>
                 </div>
 
-                <div >
-                <h4>Our World Class Chefs</h4>
+                <div className='chef-head'>
+                <h4 className='chef-title'>Our World Class Chefs</h4>
                 <div className='our-chef'>
                 {recipes.map(data=>data.chefInfo.img&& <ChefCard data={data} key={data.postId}></ChefCard>)}
                 </div>
             </div>
-                <div >
-                <h4>Our Recipes</h4>
+                <div className='chef-head'>
+                <h4 className='chef-title'>Our Recipes</h4>
                 <div className='our-chef'>
                 {shortData.map(data=><SingleRecipe key={data.postId} data={data}></SingleRecipe>)}
                 </div>

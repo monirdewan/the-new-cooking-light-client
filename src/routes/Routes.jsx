@@ -45,22 +45,22 @@ const router = createBrowserRouter([
             {
                 path:'recipes',
                 element:<Recipes></Recipes>,
-                loader:()=> fetch('http://localhost:5000/recipes')
+                loader:()=> fetch('https://the-new-cooking-light-server-monirdewan.vercel.app/recipes')
             },
             {
                 path:'chefs',
                 element:<Chefs></Chefs>,
-                loader:()=> fetch('http://localhost:5000/recipes')
+                loader:()=> fetch('https://the-new-cooking-light-server-monirdewan.vercel.app/recipes')
             },
             {
                 path:'recipes/:id',
                 element:<RcipeDetails></RcipeDetails>,
-                loader:({params})=> fetch(`http://localhost:5000/recipes/${params.id}`)
+                loader:({params})=> fetch(`https://the-new-cooking-light-server-monirdewan.vercel.app/recipes/${params.id}`)
             },
             {
                 path:'recipes/chef/:id',
                 element:<ChefDetails></ChefDetails>,
-                loader:({params})=> fetch(`http://localhost:5000/recipes/chef/${params.id}`)
+                loader:({params})=> fetch(`https://the-new-cooking-light-server-monirdewan.vercel.app/recipes/chef/${params.id}`)
             }
         ]
     }

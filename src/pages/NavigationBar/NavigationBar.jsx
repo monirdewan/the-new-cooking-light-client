@@ -14,7 +14,7 @@ const NavigationBar = () => {
     <div>
       <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="#home"><img style={{ height: '50px' }} src='logo.png' alt="" /></Navbar.Brand>
+          <Navbar.Brand href="#home"><img style={{ height: '50px' }} src="https://scontent.fdac96-1.fna.fbcdn.net/v/t39.30808-6/345301165_932674414683548_5796678471629702719_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeE9NzCWs9u8NHiyCRTL4hjQ033rY06aT2TTfetjTppPZKT8aNiiuG7xiHWq7YLuO7jzvOVEFczxeMsB5_OPMpND&_nc_ohc=ruc-cN249dsAX8v1NKG&_nc_zt=23&_nc_ht=scontent.fdac96-1.fna&oh=00_AfDY1aTeU5WRllibLukY60jMfAuj-WZrN2VBdTAs-Yzwhw&oe=64596A37" alt="" /></Navbar.Brand>
           <Nav className="me-auto d-flex gap-3">
             <Link className='text-decoration-none text-dark' to='/'>Home</Link>
             <Link className='text-decoration-none text-dark' to='/recipes'>Recipes</Link>

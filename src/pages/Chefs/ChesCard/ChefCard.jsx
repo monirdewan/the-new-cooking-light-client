@@ -19,8 +19,6 @@ const ChefCard = ({data}) => {
             <div>
                 <Link to={`/recipes/chef/${chef_id}`}>View recipes</Link>
                 <div>
-                <FaHeart></FaHeart>
-                <FaRegHeart></FaRegHeart>
                 </div>
             </div>
         </div>
