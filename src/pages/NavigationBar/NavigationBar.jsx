@@ -19,6 +19,7 @@ const NavigationBar = () => {
             <Link className='text-decoration-none text-dark' to='/'>Home</Link>
             <Link className='text-decoration-none text-dark' to='/recipes'>Recipes</Link>
             <Link className='text-decoration-none text-dark' to='/chefs'>Chefs</Link>
+            <Link className='text-decoration-none text-dark' to='/blogs'>Blogs</Link>
           </Nav>
           <div>
             {

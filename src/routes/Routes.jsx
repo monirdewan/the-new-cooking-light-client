@@ -10,6 +10,7 @@ import RcipeDetails from '../pages/RcipeDetails/RcipeDetails';
 import ChefDetails from '../pages/ChefDetails/ChefDetails';
 import Chefs from '../pages/Chefs/Chefs';
 import NotFound from '../pages/NotFound/NotFound';
+import Blogs from '../pages/Blogs/Blogs';
 
 const router = createBrowserRouter([
     {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
                 path:'recipes/chef/:id',
                 element:<ChefDetails></ChefDetails>,
                 loader:({params})=> fetch(`https://the-new-cooking-light-server-monirdewan.vercel.app/recipes/chef/${params.id}`)
+            },
+            {
+                path:'blogs',
+                element:<Blogs></Blogs>
             }
         ]
     }
